@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITextFieldDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     var count:[String] = []
@@ -20,8 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         return count.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: TextCell.idetifier, for: indexPath) as! TextCell
-        cell.label.text = count[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: TextCell.idetifier, for: indexPath)
         return cell
     }
 
@@ -30,5 +29,14 @@ class ViewController: UIViewController, UITableViewDataSource {
         tableView.reloadData()
     }
 
+
+    @IBAction func confirm(_ sender: Any) {
+        let cell = tableView.dequeueReusableCell(withIdentifier: TextCell.idetifier) as! TextCell
+//        cell.configur(nameLabel: "ABCDEFG")
+        var message: [String] = []
+        cell.textField.text = ""
+        message.append(cell.textField.text!)
+        print(message)
+    }
 }
 

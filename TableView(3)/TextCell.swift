@@ -7,22 +7,32 @@
 
 import UIKit
 
-class TextCell: UITableViewCell {
+class TextCell: UITableViewCell, UITextFieldDelegate {
     static let idetifier = "TextCell"
 
     static func nib() -> UINib {
         return UINib(nibName: "TextCell", bundle: nil)
     }
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
+        textField.placeholder = "アイウエオ"
+        textField.delegate = self
     }
 
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var TextField: UITextField!
-
-
+    @IBOutlet weak var textField: UITextField!
     func configur(nameLabel: String) {
-        label.text = nameLabel
+        textField.text = nameLabel
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.endEditing(true)
+        print(textField.text!)
+        m(message: textField.text!)
+        return true
+    }
+    func m(message: String) {
+        var a = textField.text
+        print(a!)
     }
 }
