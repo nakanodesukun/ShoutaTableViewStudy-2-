@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITextFieldDelegate {
 
+
     @IBOutlet weak var tableView: UITableView!
     var count:[String] = []
     override func viewDidLoad() {
@@ -28,15 +29,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITextFieldDelega
         count += [""]
         tableView.reloadData()
     }
-
-
-    @IBAction func confirm(_ sender: Any) {
-        let cell = tableView.dequeueReusableCell(withIdentifier: TextCell.idetifier) as! TextCell
-//        cell.configur(nameLabel: "ABCDEFG")
-        var message: [String] = []
-        cell.textField.text = ""
-        message.append(cell.textField.text!)
-        print(message)
-    }
+    
 }
 

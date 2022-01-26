@@ -43,15 +43,6 @@
                                     <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1v1-dp-xl6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgW-Hd-CD3">
-                                <rect key="frame" x="327" y="74" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="確定"/>
-                                <connections>
-                                    <action selector="confirm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yFi-Ds-FR2"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

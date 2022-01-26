@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import RealmSwift
 
 class TextCell: UITableViewCell, UITextFieldDelegate {
     static let idetifier = "TextCell"
+    var count:[String] = []
 
     static func nib() -> UINib {
         return UINib(nibName: "TextCell", bundle: nil)
@@ -18,6 +20,8 @@ class TextCell: UITableViewCell, UITextFieldDelegate {
         super.awakeFromNib()
         textField.placeholder = "アイウエオ"
         textField.delegate = self
+        print(Realm.Configuration.defaultConfiguration.fileURL)
+
     }
 
     @IBOutlet weak var label: UILabel!
@@ -27,12 +31,18 @@ class TextCell: UITableViewCell, UITextFieldDelegate {
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.endEditing(true)
-        print(textField.text!)
-        m(message: textField.text!)
+        count.append(textField.text!)
+        let realm = try! Realm()
+        let user = User()
+        user.text = textField.text!
+        try! realm.write({
+            realm.add(user)
+        })
+        print(user)
         return true
     }
     func m(message: String) {
-        var a = textField.text
+        let a = textField.text
         print(a!)
     }
 }
