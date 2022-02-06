@@ -8,21 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		04D0C728CC2E467265E21E31 /* Pods_TableView_3_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDFA7D6978A93CE64BEF06 /* Pods_TableView_3_.framework */; };
-		95D6245527A120AD003E429C /* RealmUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D6245427A120AD003E429C /* RealmUser.swift */; };
+		955DE2BC27AF964A009EE7A8 /* TotalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955DE2BA27AF964A009EE7A8 /* TotalCell.swift */; };
 		95D70AD5279FEF7E00ED7224 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D70AD4279FEF7E00ED7224 /* AppDelegate.swift */; };
 		95D70AD7279FEF7E00ED7224 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D70AD6279FEF7E00ED7224 /* SceneDelegate.swift */; };
 		95D70AD9279FEF7E00ED7224 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D70AD8279FEF7E00ED7224 /* ViewController.swift */; };
 		95D70ADC279FEF7E00ED7224 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95D70ADA279FEF7E00ED7224 /* Main.storyboard */; };
 		95D70ADE279FEF7F00ED7224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D70ADD279FEF7F00ED7224 /* Assets.xcassets */; };
 		95D70AE1279FEF7F00ED7224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95D70ADF279FEF7F00ED7224 /* LaunchScreen.storyboard */; };
-		95D70AED279FF0C300ED7224 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D70AEB279FF0C300ED7224 /* TextCell.swift */; };
-		95D70AEE279FF0C300ED7224 /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95D70AEC279FF0C300ED7224 /* TextCell.xib */; };
+		95D70AED279FF0C300ED7224 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D70AEB279FF0C300ED7224 /* GameCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		58CA6B9118EB3975BA509EAF /* Pods-TableView(3).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableView(3).release.xcconfig"; path = "Target Support Files/Pods-TableView(3)/Pods-TableView(3).release.xcconfig"; sourceTree = "<group>"; };
 		64BDFC482FE9DEE0725B2989 /* Pods-TableView(3).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableView(3).debug.xcconfig"; path = "Target Support Files/Pods-TableView(3)/Pods-TableView(3).debug.xcconfig"; sourceTree = "<group>"; };
-		95D6245427A120AD003E429C /* RealmUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUser.swift; sourceTree = "<group>"; };
+		955DE2BA27AF964A009EE7A8 /* TotalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCell.swift; sourceTree = "<group>"; };
 		95D70AD1279FEF7E00ED7224 /* TableView(3).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TableView(3).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D70AD4279FEF7E00ED7224 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95D70AD6279FEF7E00ED7224 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,8 +30,7 @@
 		95D70ADD279FEF7F00ED7224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95D70AE0279FEF7F00ED7224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95D70AE2279FEF7F00ED7224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95D70AEB279FF0C300ED7224 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
-		95D70AEC279FF0C300ED7224 /* TextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCell.xib; sourceTree = "<group>"; };
+		95D70AEB279FF0C300ED7224 /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
 		FEFDFA7D6978A93CE64BEF06 /* Pods_TableView_3_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableView_3_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,10 +87,9 @@
 				95D70AD4279FEF7E00ED7224 /* AppDelegate.swift */,
 				95D70AD6279FEF7E00ED7224 /* SceneDelegate.swift */,
 				95D70AD8279FEF7E00ED7224 /* ViewController.swift */,
-				95D6245427A120AD003E429C /* RealmUser.swift */,
 				95D70ADA279FEF7E00ED7224 /* Main.storyboard */,
-				95D70AEB279FF0C300ED7224 /* TextCell.swift */,
-				95D70AEC279FF0C300ED7224 /* TextCell.xib */,
+				95D70AEB279FF0C300ED7224 /* GameCell.swift */,
+				955DE2BA27AF964A009EE7A8 /* TotalCell.swift */,
 				95D70ADD279FEF7F00ED7224 /* Assets.xcassets */,
 				95D70ADF279FEF7F00ED7224 /* LaunchScreen.storyboard */,
 				95D70AE2279FEF7F00ED7224 /* Info.plist */,
@@ -162,7 +159,6 @@
 			files = (
 				95D70AE1279FEF7F00ED7224 /* LaunchScreen.storyboard in Resources */,
 				95D70ADE279FEF7F00ED7224 /* Assets.xcassets in Resources */,
-				95D70AEE279FF0C300ED7224 /* TextCell.xib in Resources */,
 				95D70ADC279FEF7E00ED7224 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,9 +213,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				95D70AD9279FEF7E00ED7224 /* ViewController.swift in Sources */,
+				955DE2BC27AF964A009EE7A8 /* TotalCell.swift in Sources */,
 				95D70AD5279FEF7E00ED7224 /* AppDelegate.swift in Sources */,
-				95D6245527A120AD003E429C /* RealmUser.swift in Sources */,
-				95D70AED279FF0C300ED7224 /* TextCell.swift in Sources */,
+				95D70AED279FF0C300ED7224 /* GameCell.swift in Sources */,
 				95D70AD7279FEF7E00ED7224 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
