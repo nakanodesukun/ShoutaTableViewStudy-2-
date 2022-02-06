@@ -10,6 +10,7 @@ private struct ViewState {
     var gameScores: [Int]
     var totalScore: Int {
         gameScores.reduce(0, +)
+        
     }
 }
 final class ViewController: UIViewController {
