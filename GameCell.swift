@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import RealmSwift
+
 
 final class GameCell: UITableViewCell  {
 
@@ -18,10 +18,11 @@ final class GameCell: UITableViewCell  {
 
     @IBAction func didchangeStepperValue(_ sender: Any) {
         didchangeStepperValueHandler(Int(stepper.value))
+
     }
 // cellクラスは具体的な処理をしないで外部に処理を投げる
     func configure(gameIndex: Int,
-                   score: Int,
+                   score: Int, 
                    didChangeStepperValue: @escaping (Int) -> Void )  {
         gameLabel.text = "Game\(gameIndex + 1)"
         scoreLabel.text = String(score)

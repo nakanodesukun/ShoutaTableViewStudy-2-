@@ -4,12 +4,13 @@
 //
 //  Created by 中野翔太 on 2022/01/25.
 import UIKit
-import SwiftUI
+
 // 値を格納する
 private struct ViewState {
     var gameScores: [Int]
     var totalScore: Int {
         gameScores.reduce(0, +)
+
     }
 }
 final class ViewController: UIViewController {
@@ -61,10 +62,12 @@ extension ViewController: UITableViewDataSource {
                                score: state.gameScores[indexPath.row],
                                // クロージャーについて
                                didChangeStepperValue: { [weak self] newScore in
+                    print("\(newScore)について知りたい")
                     self?.state.gameScores[indexPath.row] = newScore
+                    tableView.reloadData()
                     // 何これ
-                    self?.tableView.reloadRows(at: [indexPath], with: .none)
-                    self?.tableView.reloadSections([Section.total.rawValue], with: .none)
+//                    self?.tableView.reloadRows(at: [indexPath], with: .none)
+//                    self?.tableView.reloadSections([Section.total.rawValue], with: .none)
                 }
             )
                 return cell
